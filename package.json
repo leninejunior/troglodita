@@ -1,0 +1,33 @@
+{
+  "name": "troglodita",
+  "version": "0.1.0",
+  "description": "Compressão de tokens para agentes de IA em PT-BR. Por que gastar muitos tokens quando poucos resolve?",
+  "main": "bin/install.js",
+  "bin": {
+    "troglodita": "bin/install.js"
+  },
+  "scripts": {
+    "install-skills": "node bin/install.js",
+    "benchmark": "python benchmarks/run.py"
+  },
+  "keywords": [
+    "ai",
+    "tokens",
+    "compression",
+    "portuguese",
+    "pt-br",
+    "claude",
+    "cursor",
+    "codex",
+    "vibecoding"
+  ],
+  "author": "Lenine Júnior",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenineJunior/troglodita.git"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "debug-react",
+    "category": "debug",
+    "prompt": "Meu componente React re-renderiza toda vez que o pai atualiza. O que pode estar causando isso e como resolver?"
+  },
+  {
+    "id": "fix-prisma",
+    "category": "bugfix",
+    "prompt": "Estou recebendo o erro 'PrismaClientKnownRequestError: Unique constraint failed on the fields: (email)'. Como resolver?"
+  },
+  {
+    "id": "setup-next",
+    "category": "setup",
+    "prompt": "Como configurar autenticação com NextAuth.js usando provider do Google no meu projeto Next.js?"
+  },
+  {
+    "id": "explain-docker",
+    "category": "explicação",
+    "prompt": "Explica a diferença entre CMD e ENTRYPOINT no Dockerfile e quando usar cada um."
+  },
+  {
+    "id": "refactor-api",
+    "category": "refactor",
+    "prompt": "Tenho um controller NestJS com 300 linhas fazendo validação, lógica de negócio e acesso ao banco. Como refatorar?"
+  },
+  {
+    "id": "architecture-microservices",
+    "category": "arquitetura",
+    "prompt": "Quando faz sentido quebrar um monolito NestJS em microsserviços? Quais os critérios pra decidir?"
+  },
+  {
+    "id": "review-sql",
+    "category": "review",
+    "prompt": "Revisa essa query: SELECT * FROM users WHERE name LIKE '%' + @input + '%' ORDER BY created_at DESC"
+  },
+  {
+    "id": "devops-deploy",
+    "category": "devops",
+    "prompt": "Como fazer deploy de uma aplicação Next.js + NestJS com Docker Compose em uma VPS Ubuntu?"
+  },
+  {
+    "id": "implement-pagination",
+    "category": "implementação",
+    "prompt": "Preciso implementar paginação cursor-based na minha API NestJS com Prisma. Como fazer?"
+  },
+  {
+    "id": "debug-cors",
+    "category": "debug",
+    "prompt": "Estou recebendo erro de CORS no browser mas o backend está configurado com cors: true. O que pode ser?"
+  }
+]
