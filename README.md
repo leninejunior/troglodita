@@ -3,7 +3,7 @@
 <p align="center"><i>por que gastar muitos tokens quando poucos resolve?</i></p>
 
 <p align="center">
-  <a href="https://github.com/lenineJunior/troglodita/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License"></a>
+  <a href="https://github.com/leninejunior/troglodita/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="MIT License"></a>
   <a href="#instalar"><img src="https://img.shields.io/badge/idioma-PT--BR-blue" alt="PT-BR"></a>
 </p>
 
@@ -42,13 +42,13 @@ Economia de **~70% nos tokens de saída** sem perder precisão técnica.
 **macOS / Linux / WSL:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/lenineJunior/troglodita/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/leninejunior/troglodita/main/install.sh | bash
 ```
 
 **Windows (Git Bash / WSL):**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/lenineJunior/troglodita/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/leninejunior/troglodita/main/install.sh | bash
 ```
 
 Requisitos: **Node.js >= 18**. Instalação em ~30 segundos.

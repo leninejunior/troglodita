@@ -25,6 +25,6 @@ if [ -f "$SCRIPT_DIR/bin/install.js" ]; then
 else
   TMPDIR=$(mktemp -d)
   trap 'rm -rf "$TMPDIR"' EXIT
-  git clone --depth 1 https://github.com/lenineJunior/troglodita.git "$TMPDIR/troglodita" 2>/dev/null
+  git clone --depth 1 https://github.com/leninejunior/troglodita.git "$TMPDIR/troglodita" 2>/dev/null
   node "$TMPDIR/troglodita/bin/install.js" "$@"
 fi
