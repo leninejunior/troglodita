@@ -64,12 +64,21 @@ Requisitos: **Node.js >= 18**. Instalação em ~30 segundos.
 
 ## Agentes suportados
 
-| Agente | Status |
-|--------|--------|
-| Claude Code | ✅ |
-| Cursor | ✅ |
-| Codex | ✅ |
-| Outros | em breve |
+| Agente | Escopo | Status |
+|--------|--------|--------|
+| Claude Code | global (skills) | ✅ |
+| Cursor | projeto (.mdc) | ✅ |
+| Codex CLI | global (AGENTS.md) | ✅ |
+| Windsurf | global + projeto | ✅ |
+| Cline | global (rules) | ✅ |
+| Roo Code | global (rules) | ✅ |
+| GitHub Copilot | projeto (instructions) | ✅ |
+| Gemini CLI | global (GEMINI.md) | ✅ |
+| Antigravity | global (AGENTS.md) | ✅ |
+| OpenCode | global (AGENTS.md) | ✅ |
+| Aider | projeto (CONVENTIONS.md) | ✅ |
+| Amazon Q | projeto (rules) | ✅ |
+| Zed AI | global + skills | ✅ |
 
 ## Como funciona
 
