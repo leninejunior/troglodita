@@ -1,5 +1,5 @@
 <p align="center">🦴</p>
-<h1 align="center">troglodita</h1>
+<h1 align="center">Troglodita</h1>
 <p align="center"><i>por que gastar muitos tokens quando poucos resolve?</i></p>
 
 <p align="center">
