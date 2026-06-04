@@ -100,7 +100,7 @@ function homeDir() {
 
 function hasCommand(cmd) {
   try {
-    execFileSync('which', [cmd], { stdio: 'ignore' });
+    execFileSync('sh', ['-c', `command -v ${cmd}`], { stdio: 'ignore' });
     return true;
   } catch {
     if (process.platform === 'win32') {
