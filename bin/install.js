@@ -337,10 +337,23 @@ function installZed() {
 // --- Main ---
 
 async function prompt(question) {
-  const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
+  let input = process.stdin;
+  let shouldDestroy = false;
+
+  if (!process.stdin.isTTY) {
+    try {
+      input = fs.createReadStream('/dev/tty');
+      shouldDestroy = true;
+    } catch {
+      // Fallback para stdin (provavelmente receberá EOF)
+    }
+  }
+
+  const rl = readline.createInterface({ input, output: process.stdout });
   return new Promise((resolve) => {
     rl.question(question, (answer) => {
       rl.close();
+      if (shouldDestroy) input.destroy();
       resolve(answer.trim().toLowerCase());
     });
   });
