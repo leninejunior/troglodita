@@ -42,13 +42,13 @@ Economia de **~70% nos tokens de saída** sem perder precisão técnica.
 **macOS / Linux / WSL:**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/leninejunior/troglodita/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/leninejunior/troglodita/master/install.sh | bash
 ```
 
 **Windows (Git Bash / WSL):**
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/leninejunior/troglodita/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/leninejunior/troglodita/master/install.sh | bash
 ```
 
 Requisitos: **Node.js >= 18**. Instalação em ~30 segundos.
