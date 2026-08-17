@@ -1,0 +1,30 @@
+# SONDA — existe só para responder UMA pergunta: o GitHub Actions ainda aloca
+# máquina para esta conta?
+#
+# Motivo: no repo PRIVADO leninejunior/imobgoo todos os jobs morrem em ~2s com
+# ZERO passos executados (started_at 12:58:09 → completed_at 12:58:11). Isso não
+# é o código falhando; é o GitHub recusando o runner — assinatura de cota de
+# minutos esgotada ou limite de gastos zerado.
+#
+# Repo PÚBLICO tem minutos grátis e ilimitados. Então:
+#   - se ESTA sonda rodar  → a conta está viva; o bloqueio é a cota do repo privado
+#   - se ESTA sonda morrer → o bloqueio é da conta inteira (pagamento), não da cota
+#
+# Pode apagar depois de lido o resultado.
+name: sonda-ci
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  vive:
+    name: O runner foi alocado?
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Provar que um passo executou de verdade
+        run: |
+          echo "runner alocado em: $(date -u +%FT%TZ)"
+          echo "os=$RUNNER_OS arch=$RUNNER_ARCH nome=$RUNNER_NAME"
+          echo "Se esta linha aparece no log, a conta consegue rodar Actions."
